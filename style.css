@@ -1,0 +1,51 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+div.scoreboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr;
+    gap: 0.5rem;
+}
+
+div.letter {
+    border: 2px solid black;
+    height: 60px;
+    width: 40px;
+    font-size: 40px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close {
+    background-color: yellow;
+    color: white;
+}
+
+.success {
+    background-color: green;
+    color: white;
+}
+
+.off {
+    background-color: #ccc;
+    color: white;
+}
